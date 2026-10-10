@@ -1,0 +1,82 @@
+/* ==========================================================================
+   1. GLOBAL RESETS & VARIABLES
+   ========================================================================== */
+
+/* Define CSS Variables for global colors and formatting */
+:root {
+  --primary-color: #3498db;
+  --text-color: #2c3e50;
+  --background-color: #f4f7f6;
+  --card-background: #ffffff;
+  --border-radius: 8px;
+}
+
+/* Reset default browser spacing and fix element sizing calculations */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   2. BASE PAGE STYLES
+   ========================================================================== */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   3. LAYOUT & CONTAINER STYLES
+   ========================================================================== */
+.container {
+  max-width: 800px;
+  margin: 0 auto; /* Centers the content block horizontally */
+}
+
+.card {
+  background-color: var(--card-background);
+  padding: 25px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================================================
+   4. UI COMPONENT STYLES (BUTTON EXAMPLE)
+   ========================================================================== */
+.styled-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Interactive hover and click states */
+.styled-button:hover {
+  background-color: #2980b9; /* Slightly darker shade on hover */
+}
+
+.styled-button:active {
+  transform: scale(0.98); /* Subtle "pressed down" effect */
+}
+
